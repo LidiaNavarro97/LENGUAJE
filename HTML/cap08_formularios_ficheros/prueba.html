@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAP08:Formularios</title>
+</head>
+<body>
+    <h1>Ejemplo inicial formulario</h1>
+
+    <form action="http:/midominio.com" method="post"><!--en el action va la pagina web a donde va lo q envio-->
+
+        <!--label es para dejar claro con quien esta relacionado-->
+        <p>
+            <!--en el for se pone lo que tengas escrito en id-->
+            <label for="usuario">Usuario</label><br>
+            <!--tablita para poder escribir-->
+            <input type="text" name="usuario" id="usuario">
+        </p>
+       
+
+        <p>
+            <label for="clave">Password</label><br>
+            <input type="password" name="clave" id="clave">
+        </p>
+
+        <p>
+            <label>Fecha de compra <br>
+                <input type="date" name="Fecha">
+            </label>
+        </p>
+
+        <p>
+            <label>Correo electronico <br>
+                <input type="email" name="correo">
+            </label>
+        </p>
+
+        <!--submit para enviar-->
+        <input type="submit" value="enviar">
+        <!--reset para limpiar el texto escrito-->
+        <input type="reset" value="Limpiar">
+
+
+
+
+
+    </form>
+</body>
+</html>
