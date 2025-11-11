@@ -8,7 +8,45 @@
 <body>
     <h1>Ejemplo inicial formulario</h1>
 
-    <form action="http:/midominio.com" method="post"><!--en el action va la pagina web a donde va lo q envio-->
+    <form action="http:/midominio.com" method="post" enctype="multipart/form-data"><!--en el action va la pagina web a donde va lo q envio--><!--en el multipart sirve para poder enviar el fichero-->
+
+        <p>
+            <label for="provincia">Seleccione provincia </label><br>
+                <select name="provincia" id="provincia">
+                    <option value="C">Cádiz</option>
+                    <option value="S">Sevilla</option>
+                    <option value="M">Málaga</option>
+                </select>
+        </p>
+
+        <p>Texto de su queja <br><!--textarea para el tamaño de la cuadricula del texto-->
+            <label>
+                <textarea name="miqueja" cols="72" rows="12">Rellene con su queja</textarea>
+            </label>
+        </p>
+
+        <p> Seleccione el color
+            <label for="mi color"></label>
+            <input type="color" name="mi color" id="micolor">  
+        </p>
+
+        <p> Seleccione sus preferencias <br>
+            <label><input type="checkbox" name="preferencias" value="C">Cine</label>
+            <label><input type="checkbox" name="preferencias" value="T">Teatro</label>
+            <label><input type="checkbox" name="preferencias" value="V">Viajes</label>
+        </p>
+
+        <p> Selecciona tu modulo preferido <br>
+            <label><input type="radio" name="modulo" value="LMSGI">Lenguaje de marca</label><br>
+            <label><input type="radio" name="modulo" value="SI">Sistemas Informáticos</label><br>
+            <label><input type="radio" name="modulo" value="Pr">Programación</label>
+        </p>
+
+        <p>
+            <label> Factura de compra <br>
+                <input type="file" name="factura">
+            </label>
+        </p>
 
         <!--label es para dejar claro con quien esta relacionado-->
         <p>
@@ -26,13 +64,13 @@
 
         <p>
             <label>Fecha de compra <br>
-                <input type="date" name="Fecha">
+                <input type="date" name="Fecha" required><!--required es para que sea necesario, en este caso enviar la fecha, sino NO se envia el formulario-->
             </label>
         </p>
 
         <p>
             <label>Correo electronico <br>
-                <input type="email" name="correo">
+                <input type="email" name="correo" placeholder="Use su email personal">
             </label>
         </p>
 
