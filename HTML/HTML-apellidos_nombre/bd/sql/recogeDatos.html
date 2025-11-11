@@ -18,6 +18,28 @@
         </ul>
 </nav>
 
+<h1>Formulario de recogida de datos</h1>
+<form action="/procesa/altas.php" method="post" enctype="multipart/form-data">
+
+    <fieldset>
+        <legend>Datos de la compra</legend>
+            <p>
+                <label>Numero de unidades
+                    <input type="number" name="unidades" value="1" min="1" max="1000" step="ANY"> 
+                    <!--el step con el .1, es para poder poner decimales y ANY para poder poner mas numeros de decimales-->
+                </label>
+            </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Datos personales</legend>
+    </fieldset>
+
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Borrar">
+</form>
+
+
 
 </body>
 </html>
