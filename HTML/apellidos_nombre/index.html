@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Página para el examen</title>
+</head>
+<body>
+
+  <nav>
+    <h2>Zona de navegación de nuesta web.</h2>
+
+    <ul>
+      <li><a href="">Página inicial</a></li>
+      <li><a href="">Nuestro blog</a></li>
+      <li><a href="">Resultados</a></li>
+      <li><a href="">Ayuda HTML</a></li>
+    </ul>
+
+</nav>
+
+  <h1>Encuesta alumando</h1>
+
+  <form action="">
+
+    <fieldset>
+
+      <legend>Datos iniciales</legend>
+   
+    <p>
+      Seleccione a continuación cuales son los temas de su interés: <br>
+      <label><input type="checkbox" name="interes" value="HTML">HTML</label> <br>
+      <label><input type="checkbox" name="interes" value="CSS">Estilos CSS</label> <br>
+      <label><input type="checkbox" name="interes" value="JS">El lenguaje JaVAsCRIPT</label> <br>
+    </p>
+
+    <p>
+      <label>Fecha <br>
+        <input type="date" name="fecha" min="2019-09-15">
+      </label>
+    </p>
+
+    <p>
+      <label> Color (rojo por defecto)
+        <input type="color" name="color" value="#FF0000">
+      </label>
+    </p>
+    
+    <p>
+      <label>Su página web <input type="url" name="web"></label>
+    </p>
+
+    <p> Selecciona la zona donde vive <br>
+      <label><input type="radio" name="zona" value="Jerez" checked>Jerez(* Valor por defecto)</label> <br>
+
+      <label><input type="radio" name="zona" value="Pedanías">Pedanías: Cuartillos, Estella, etc.. </label> <br>
+
+      <label><input type="radio" name="zona" value="Fuera">Fuera de Jerez: El Puerto, Chipiona ,etc.. </label> <br>
+    </p>
+
+    <p>
+      <input type="checkbox" name="acepta" id="SÍ">
+      <label for="acepta">Acepto recibir notificaciones</label>
+    </p>
+
+    </fieldset>
+
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Borrar">
+    
+  </form>
+
+</body>
+</html>
+
+      
+
+

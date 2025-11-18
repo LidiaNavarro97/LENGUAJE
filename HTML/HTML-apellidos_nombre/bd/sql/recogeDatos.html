@@ -16,23 +16,57 @@
             <li><a href="../resultados.html">Tabla de resultados</a></li>
             <li><a href="../../blog/blog.html">Nuestro blog</a> </li>
         </ul>
-</nav>
+</nav> 
 
 <h1>Formulario de recogida de datos</h1>
 <form action="/procesa/altas.php" method="post" enctype="multipart/form-data">
 
     <fieldset>
         <legend>Datos de la compra</legend>
-            <p>
-                <label>Numero de unidades
-                    <input type="number" name="unidades" value="1" min="1" max="1000" step="ANY"> 
+
+        <p>
+            Selecciona marca <br>
+            <label><input type="radio" name="marca" value="A">Marca A</label>
+            <label><input type="radio" name="marca" value="B">Marca B</label>
+            <label><input type="radio" name="marca" value="C">Marca C</label>
+            <label><input type="radio" name="marca" value="D">Marca D</label>
+        </p>
+        
+        <p>
+             <label>Numero de unidades
+                 <input type="number" name="unidades" value="1" min="1" max="1000" step="ANY"> 
                     <!--el step con el .1, es para poder poner decimales y ANY para poder poner mas numeros de decimales-->
-                </label>
-            </p>
+             </label>
+        </p>
+
+        <p>
+            <label for="ficheros">DNI y Facturas</label>
+            <input type="file" name="ficheros" id="ficheros" multiple>
+        </p>
+
+        <p>
+            <label> Fecha compra <br>
+                <input type="date" name="fecha compra" >
+            </label>
+        </p>
+
     </fieldset>
 
     <fieldset>
         <legend>Datos personales</legend>
+
+        <p>
+            <label>Usuario 
+                <input type="email" name="correo" placeholder="correo electronico">
+            </label>
+        </p>
+
+        <p>
+            <label>Código de validación: 
+                <input type="text" name="codigo" required>
+            </label>
+        </p>
+
     </fieldset>
 
     <input type="submit" value="Enviar">
