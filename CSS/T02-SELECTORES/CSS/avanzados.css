@@ -1,0 +1,34 @@
+/* avanzados.css */
+
+/* ATRIBUTOS */
+dfn[title] {
+    background-color: lightpink;
+}
+
+/* sibling */
+/* Que esten al mismo nivel y que venga el h4 desp del h3 */
+h3 ~ h4 {
+    background-color: lightsalmon;
+}
+
+
+/* adyacente , justo antes*/
+h1 + p, 
+h2 + p {
+    background-color: lime;}
+
+/* DENTRO de, no para despues de, como era el + */
+article h2 { 
+    background-color: lightblue;
+}
+
+ /* selector descendiente */
+article p {
+    color: brown;
+}
+
+/* es el selector HIJO */
+article > p { 
+    color: blue;
+    font-style: italic;
+}

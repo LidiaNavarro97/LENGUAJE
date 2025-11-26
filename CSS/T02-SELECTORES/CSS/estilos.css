@@ -1,0 +1,31 @@
+/* elector de id */
+#resumen {
+    text-align: center;
+}
+
+/* selector de clase */
+.novedad {
+    background-color: yellow;
+    color: black;
+}
+
+h1 {
+    text-align: center; /* lo alinea al centro */
+}
+p {
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* descendente */
+section p {
+    color: green;
+}
+section aside p {
+    color: brown;
+}
+/* agrupacion */
+h2, h3 {
+    text-decoration: underline;
+    font-style: arial;
+}
+
