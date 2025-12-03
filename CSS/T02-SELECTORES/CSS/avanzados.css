@@ -4,6 +4,16 @@
 dfn[title] {
     background-color: lightpink;
 }
+[title="pendiente"] {
+    background-color: yellow;
+}
+[title*="pendiente"] {
+    background-color: yellow;
+}
+[href$=".pdf"] {
+    background-color:lightblue
+}
+
 
 /* sibling */
 /* Que esten al mismo nivel y que venga el h4 desp del h3 */
