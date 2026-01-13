@@ -15,8 +15,8 @@ dfn[title] {
 }
 
 
-/* sibling */
-/* Que esten al mismo nivel y que venga el h4 desp del h3 */
+/* sibling , hermanos*/
+/* Que esten al mismo nivel y que venga el h4 desp del h3, pero entre medio puede haber mas cosas, un parrafo o lo que sea. Se le aplicaria al h4 que es el que esta mas pegado a la llave, siempre asi */
 h3 ~ h4 {
     background-color: lightsalmon;
 }

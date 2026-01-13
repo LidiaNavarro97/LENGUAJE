@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiempo</title>
+</head>
+<body>
+    <nav>
+    <h2>Menú</h2>
+        <ul>
+            <li><a href="../../index.html">Introducción a git</a></li>
+            <li><a href="../../comercial/encuesta.html">Encuesta</a></li>
+            <li><a href="tiempo.html">El tiempo</a></li>
+        </ul>
+</nav>
+
+<h1>El tiempo esta semana</h1>
+
+<p>Debe recrear <cite>después de la Figura 1</cite> una tabla HTML dónde <strong>lo importante es el significado o semántica de los datos, no la presentación.</strong></p><br>
+
+<figure>
+    <img src="../../aux/tabla_tiempo.png" alt="tabla del tiempo" width="925" height="227" >
+    <figcaption>Figura 1: figura con la tabla a codificar debajo</figcaption>
+</figure>
+
+<pre>
+    <code>
+        &lt;!-- Aquí DEBAJO debe  aparecer su tabla HTML-->
+    </code>
+</pre>
+
+<table border="1"> 
+    <caption>Prediccion metereológica</caption>
+    <tr>
+        <td>Cadiz</td>
+        <td>Sevilla</td>
+        <td>Granada</td>
+        <td>Huelva</td>
+        <td>Almeria</td>
+        <th>Día</th>
+    </tr>
+
+    <tr>
+        <td rowspan="3">Nublado</td>
+        <td>Niebla</td>
+        <td>Chubascos</td>
+        <td>Granizo</td>
+        <td>Niebla</td>
+        <th>Lunes</th>
+    </tr>
+
+    <tr>
+        <!-- <td>Nublado</td> -->
+        <td>Chubascos</td>
+        <td>Granizo</td>
+        <td>Chubascos</td>
+        <td>Lluvia</td>
+        <th>Martes</th>
+    </tr>
+
+    <tr>
+        <!-- <td>Nublado</td> -->
+        <td colspan="4" style="text-align: center;">Soleado</td>
+        <!-- <td>Soleado</td>
+        <td>Soleado</td>
+        <td>Soleado</td> -->
+        <th>Miercoles</th>
+    </tr>
+
+    <tr>
+        <td>Chubascos</td>
+        <td rowspan="2" colspan="3" style="text-align: center;"><strong>Tormentas fuertes</strong></td>
+        <!-- <td>Tormentas fuertes</td>
+        <td>Tormentas fuertes</td> -->
+        <td>Chubascos</td>
+        <th>Jueves</th>
+    </tr>
+
+    <tr>
+        <td>Granizo</td>
+        <!-- <td>Tormentas fuertes</td> -->
+        <!-- <td>Tormentas fuertes</td>
+        <td>Tormentas fuertes</td> -->
+        <td>Soleado</td>
+        <th>Viernes</th>
+    </tr>
+
+</table>
+
+</body>
+</html>

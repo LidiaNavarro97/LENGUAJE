@@ -27,5 +27,6 @@ section aside p {
 h2, h3 {
     text-decoration: underline;
     font-style: arial;
+    border: 2px dotted red;
 }
 
