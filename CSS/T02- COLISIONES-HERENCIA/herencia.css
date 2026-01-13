@@ -1,0 +1,10 @@
+/* file: herencia. css */
+
+section {
+  color: blue;           /* se hereda para todo el section*/
+  border: 2px solid red; /* no se hereda, se pone border para todo el secion tmb*/
+}
+/* se hereda para solo el h2 en especifico*/
+section h2 {
+  border: 2px solid blue;
+}

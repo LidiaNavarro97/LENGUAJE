@@ -10,8 +10,13 @@ dfn[title] {
 [title*="pendiente"] {
     background-color: yellow;
 }
-[href$=".pdf"] {
+/* $= esto significa que termina en */
+[href$=".pdf"] { 
     background-color:lightblue
+}
+/* ^ esto significa que comienza por */
+[href^="https://"] {
+    background-color: green
 }
 
 
